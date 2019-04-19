@@ -20,11 +20,6 @@ public class TestSpringShellApplication {
 
     @Bean
     public Parser parser() {
-        return new Parser() {
-            public ParsedLine parse(String var1, int var2,
-                                    Parser.ParseContext var3) throws SyntaxError {
-                return null;
-            }
-        };
+        return (line, cursor, var3) -> null;
     }
 }
